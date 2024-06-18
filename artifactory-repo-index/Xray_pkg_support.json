@@ -1,0 +1,909 @@
+{
+    "supported_package_types": [
+      {
+        "type": "maven",
+        "extensions": [
+          {
+            "extension": ".jar"
+          },
+          {
+            "extension": ".war"
+          },
+          {
+            "extension": ".ear"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".sar"
+          },
+          {
+            "extension": ".har"
+          },
+          {
+            "extension": ".hpi"
+          },
+          {
+            "extension": ".apk"
+          },
+          {
+            "extension": ".jar.pack.gz"
+          },
+          {
+            "extension": ".jpi"
+          },
+           {
+            "extension": ".cpa"
+          },
+          {
+            "extension": ".aar"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".rar"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "gradle",
+        "extensions": [
+          {
+            "extension": ".jar"
+          },
+          {
+            "extension": ".war"
+          },
+          {
+            "extension": ".ear"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".sar"
+          },
+          {
+            "extension": ".har"
+          },
+          {
+            "extension": ".hpi"
+          },
+          {
+            "extension": ".apk"
+          },
+          {
+            "extension": ".jar.pack.gz"
+          },
+          {
+            "extension": ".jpi"
+          },
+          {
+            "extension": ".aar"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".rar"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "ivy",
+        "extensions": [
+          {
+            "extension": ".jar"
+          },
+          {
+            "extension": ".war"
+          },
+          {
+            "extension": ".ear"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".sar"
+          },
+          {
+            "extension": ".har"
+          },
+          {
+            "extension": ".hpi"
+          },
+          {
+            "extension": ".apk"
+          },
+          {
+            "extension": ".jar.pack.gz"
+          },
+          {
+            "extension": ".jpi"
+          },
+          {
+            "extension": ".aar"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".rar"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "sbt",
+        "extensions": [
+          {
+            "extension": ".jar"
+          },
+          {
+            "extension": ".war"
+          },
+          {
+            "extension": ".ear"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".sar"
+          },
+          {
+            "extension": ".har"
+          },
+          {
+            "extension": ".hpi"
+          },
+          {
+            "extension": ".apk"
+          },
+          {
+            "extension": ".jar.pack.gz"
+          },
+          {
+            "extension": ".jpi"
+          },
+          {
+            "extension": ".aar"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".rar"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "debian",
+        "extensions": [
+          {
+            "extension": ".deb"
+          }
+        ]
+      },
+      {
+        "type": "go",
+        "extensions": [
+          {
+            "extension": ".zip"
+          }
+        ]
+      },
+      {
+        "type": "yum",
+        "extensions": [
+          {
+            "extension": ".rpm"
+          }
+        ]
+      },
+      {
+        "type": "rpm",
+        "extensions": [
+          {
+            "extension": ".rpm"
+          }
+        ]
+      },
+      {
+        "type": "docker",
+        "extensions": [
+          {
+            "extension": "manifest.json",
+            "is_file": true
+          }
+        ]
+      },
+      {
+        "type": "oci",
+        "extensions": [
+          {
+            "extension": "manifest.json",
+            "is_file": true
+          }
+        ]
+      },
+      {
+        "type": "conan",
+        "extensions": [
+          {
+            "extension": "conanmanifest.txt",
+            "is_file": true
+          }
+        ]
+      },
+      {
+        "type": "npm",
+        "extensions": [
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "pypi",
+        "extensions": [
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".whl"
+          },
+          {
+            "extension": ".egg"
+          },
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "bower",
+        "extensions": [
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          }
+        ]
+      },
+      {
+        "type": "nuget",
+        "extensions": [
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".dll"
+          },
+          {
+            "extension": ".exe"
+          }
+        ]
+      },
+      {
+        "type": "gems",
+        "extensions": [
+          {
+            "extension": ".gem"
+          }
+        ]
+      },
+      {
+        "type": "composer",
+        "extensions": [
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".tar"
+          }
+        ]
+      },
+      {
+        "type": "alpine",
+        "extensions": [
+          {
+            "extension": ".apk"
+          }
+        ]
+      },
+      {
+        "type": "alpine linux",
+        "extensions": [
+          {
+            "extension": ".apk"
+          }
+        ]
+      },
+      {
+        "type": "terraformbackend",
+        "extensions": [
+          {
+            "extension": "state.latest.json",
+            "is_file": true
+          }
+        ]
+      },
+      {
+        "type": "conda",
+        "extensions": [
+          {
+            "extension": ".conda"
+          },
+          {
+            "extension": ".tar.bz2"
+          }
+        ]
+      },
+      {
+        "type": "cargo",
+        "extensions": [
+          {
+            "extension": ".crate"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".tar.gz"
+          }
+        ]
+      },
+      {
+        "type": "cran",
+        "extensions": [
+          {
+            "extension": ".zip"
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".tar.gz"
+          }
+        ]
+      },
+      {
+        "type": "huggingfaceml",
+        "extensions": [
+          {
+            "extension": ".jfrog_huggingface_model_info.json",
+            "is_file": true
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "extensions": [
+          {
+            "extension": ".zip"
+          },
+           {
+            "extension": ".epk"
+          },
+          {
+            "extension": ".7z"
+          },
+          {
+            "extension": ".jar"
+          },
+          {
+            "extension": ".jar.pack.gz"
+          },
+          {
+            "extension": ".apk"
+          },
+          {
+            "extension": ".war"
+          },
+          {
+            "extension": ".ear"
+          },
+          {
+            "extension": ".sar"
+          },
+          {
+            "extension": ".har"
+          },
+          {
+            "extension": ".hpi"
+          },
+          {
+            "extension": ".jpi"
+          },
+          {
+            "extension": ".deb"
+          },
+          {
+            "extension": ".rpm"
+          },
+          {
+            "extension": "manifest.json",
+            "is_file": true
+          },
+          {
+            "extension": ".tgz"
+          },
+          {
+            "extension": ".tar"
+          },
+          {
+            "extension": ".tar.gz"
+          },
+          {
+            "extension": ".nupkg"
+          },
+          {
+            "extension": ".gem"
+          },
+          {
+            "extension": ".whl"
+          },
+          {
+            "extension": ".egg"
+          },
+          {
+            "extension": ".cpa"
+          },
+          {
+            "extension": ".dll"
+          },
+          {
+            "extension": ".exe"
+          },
+          {
+            "extension": ".aar"
+          },
+          {
+            "extension": ".conda"
+          },
+          {
+            "extension": ".crate"
+          },
+          {
+            "extension": ".tar.bz2"
+          },
+          {
+            "extension": ".7-z"
+          },
+          {
+            "extension": ".7zip"
+          },
+          {
+            "extension": ".7-zip"
+          },
+          {
+            "extension": ".s7z"
+          },
+          {
+            "extension": ".rar"
+          },
+          {
+            "extension": ".gnutar"
+          },
+          {
+            "extension": ".tbz"
+          },
+          {
+            "extension": ".tar.gz2"
+          },
+          {
+            "extension": ".tar.lzma"
+          },
+          {
+            "extension": ".tlz"
+          },
+          {
+            "extension": ".tar.xz"
+          },
+          {
+            "extension": ".txz"
+          },
+          {
+            "extension": ".zi"
+          },
+          {
+            "extension": ".tzst"
+          },
+          {
+            "extension": ".tar.zst"
+          },
+          {
+            "extension": ".iso"
+          },
+          {
+            "extension": ".cpio"
+          },
+          {
+            "extension": ".vmdk"
+          },
+          {
+            "extension": ".ova"
+          }
+        ]
+      }
+    ]
+  }
