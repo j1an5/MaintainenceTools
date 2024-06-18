@@ -66,11 +66,29 @@ def filter_files_by_package_type(files, package_type):
         print(f'No filter rule is specified and may contain invalid files')
         #exit(1)
     filter_rules = {
+        # Xray currently supports the following package formats with new formats added regularly.
+        # https://jfrog.com/help/r/jfrog-security-documentation/jfrog-xray
+        # Alpine
+        # Bower
+        'cargo': lambda file: not file['uri'].startswith('/.cargo/') and file['uri'].endswith('.crate') or file['uri'].endswith('.tgz') or file['uri'].endswith('.tar.gz'),
+        'composer': lambda file: not file['uri'].startswith('/.composer/'),
         'conan': lambda file: not file['uri'].startswith('/.conan/') and file['uri'].endswith('conanmanifest.txt'),
-        'docker': lambda file: not file['uri'].startswith('/.jfrog/repository.catalog') and file['uri'].endswith('manifest.json'),
+        'conda': lambda file: file['uri'].endswith('.conda') or file['uri'].endswith('.tar.bz2'),
+        'debian': lambda file: not file['uri'].startswith('/dists/') and file['uri'].endswith('.deb'),
+        'docker': lambda file: not file['uri'].startswith('/.jfrog/repository.catalog') and not file['uri'].endswith('list.manifest.json') and file['uri'].endswith('manifest.json'),
+        # Ivy
+        'go': lambda file: file['uri'].endswith('.zip'),
         'gradle': lambda file: not (file['uri'].endswith('.module') or file['uri'].endswith('.pom') or file['uri'].endswith('.xml')),
+        'huggingfaceml': lambda file: file['uri'].endswith('.jfrog_huggingface_model_info.json'),
         'maven': lambda file: not (file['uri'].endswith('.pom') or file['uri'].endswith('.xml')),
-        'npm': lambda file: not file['uri'].startswith('/.npm/')
+        'nuget': lambda file: not (file['uri'].startswith('/.nuGetV3/')) and  not (file['uri'].startswith('/.nuget/')) and file['uri'].endswith('.nupkg') or file['uri'].endswith('.dll') or file['uri'].endswith('.exe'),
+        'npm': lambda file: not file['uri'].startswith('/.npm/'),
+        # OCI
+        'pypi': lambda file: not file['uri'].startswith('/.pypi/'),
+        # SBT
+        'rpm': lambda file: file['uri'].endswith('.rpm'),
+        # RubyGems
+        'terraformbackend': lambda file: file['uri'].endswith('state.latest.json')
     }
     return [file for file in files if filter_rules.get(package_type, lambda f: True)(file)]
 
